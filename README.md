@@ -17,6 +17,7 @@ project
 │   .gitattributes    
 │   Guide.ipynb: initial file   
 │   churn_notebook.ipynb: initial file   
+|   churn_library.py: main script
 │   churn_script_logging_and_tests.py: testing script
 │   conftest.py: configure testing variables
 │
