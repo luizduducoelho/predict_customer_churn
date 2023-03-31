@@ -1,3 +1,4 @@
+# pylint: disable=E1101
 '''
 Tests module for churn_library.py
 
@@ -18,7 +19,7 @@ logging.basicConfig(
 
 def test_import():
     '''
-    test data import - this example is completed for you to assist with the 
+    test data import - this example is completed for you to assist with the
                        other test functions
     '''
     try:
@@ -49,7 +50,7 @@ def test_eda():
         raise err
 
     expected_files = ["./images/eda/churn_hist.png",
-                      "./images/eda/marital_status_hist.png", 
+                      "./images/eda/marital_status_hist.png",
                       "./images/eda/heatmap.png"]
     for filename in expected_files:
         try:
