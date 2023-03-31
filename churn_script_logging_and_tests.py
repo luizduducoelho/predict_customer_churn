@@ -6,11 +6,14 @@ Author: Luiz Coelho
 March 2023
 '''
 
+from importlib import reload
+
 import os
 import logging
 import pytest
 import churn_library as cls
 
+reload(logging)
 logging.basicConfig(
     filename='./logs/churn_library.log',
     level = logging.INFO,
