@@ -65,6 +65,11 @@ def perform_eda(dataframe):
     sns.heatmap(dataframe.corr(), annot=False, cmap='Dark2_r', linewidths = 2)
     plt.savefig(os.path.join(save_path, 'heatmap.png'))
 
+    # Total_Trans_Ct
+    plt.figure(figsize=(20,10))
+    sns.histplot(dataframe['Total_Trans_Ct'], stat='density', kde=True)
+    plt.savefig(os.path.join(save_path, 'total_trans_ct.png'))
+
 
 def encoder_helper(dataframe, category_lst, response=None):
     '''

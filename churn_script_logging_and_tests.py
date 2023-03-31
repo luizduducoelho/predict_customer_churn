@@ -54,7 +54,8 @@ def test_eda():
 
     expected_files = ["./images/eda/churn_hist.png",
                       "./images/eda/marital_status_hist.png",
-                      "./images/eda/heatmap.png"]
+                      "./images/eda/heatmap.png", 
+                      "./images/eda/total_trans_ct.png"]
     for filename in expected_files:
         try:
             assert os.path.exists(filename)
